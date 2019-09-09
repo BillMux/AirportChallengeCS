@@ -13,6 +13,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Air\Airport.csproj" />
+    <Compile Remove="UnitTest1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Airport\Airport.csproj" />
   </ItemGroup>
 </Project>

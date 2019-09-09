@@ -1,24 +1,18 @@
-using AirportClass;
 using NUnit.Framework;
 
 namespace Tests
 {
     public class Tests
     {
-        //[SetUp]
-        //public void Setup()
-        //{
-        //    Airport airport = new Airport();
-        //}
+        [SetUp]
+        public void Setup()
+        {
+        }
 
         [Test]
-        public void TestPlaneCanLand()
+        public void Test1()
         {
-            Airport airport = new Airport();
-            string plane = "plane";
-            airport.Land(plane);
-            Assert.IsNotEmpty(airport.hangar);
-            Assert.AreEqual(airport.hangar[0], plane);
+            Assert.Pass();
         }
     }
 }
