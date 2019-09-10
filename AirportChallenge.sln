@@ -5,6 +5,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Airport", "Airport\Airport.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirportTests", "AirportTests\AirportTests.csproj", "{AEB4CCC3-48FA-406C-9F24-B69A8576B859}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plane", "Plane\Plane.csproj", "{899ACF1D-2554-4B25-A7B8-20F84DAE6A51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaneTests", "PlaneTests\PlaneTests.csproj", "{AAE3C19D-88CE-4ADB-8A25-E7EDC78046E2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -19,5 +23,13 @@ Global
 		{AEB4CCC3-48FA-406C-9F24-B69A8576B859}.Debug|anycpu.Build.0 = Debug|Any CPU
 		{AEB4CCC3-48FA-406C-9F24-B69A8576B859}.Release|anycpu.ActiveCfg = Release|Any CPU
 		{AEB4CCC3-48FA-406C-9F24-B69A8576B859}.Release|anycpu.Build.0 = Release|Any CPU
+		{899ACF1D-2554-4B25-A7B8-20F84DAE6A51}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{899ACF1D-2554-4B25-A7B8-20F84DAE6A51}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{899ACF1D-2554-4B25-A7B8-20F84DAE6A51}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{899ACF1D-2554-4B25-A7B8-20F84DAE6A51}.Release|anycpu.Build.0 = Release|Any CPU
+		{AAE3C19D-88CE-4ADB-8A25-E7EDC78046E2}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{AAE3C19D-88CE-4ADB-8A25-E7EDC78046E2}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{AAE3C19D-88CE-4ADB-8A25-E7EDC78046E2}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{AAE3C19D-88CE-4ADB-8A25-E7EDC78046E2}.Release|anycpu.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
