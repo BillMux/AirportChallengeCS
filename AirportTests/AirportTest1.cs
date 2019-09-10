@@ -1,5 +1,6 @@
 using AirportClass;
 using NUnit.Framework;
+using System;
 
 namespace AirportTests
 {
@@ -12,7 +13,7 @@ namespace AirportTests
         public void TestInit()
         {
             testAirport = new Airport();
-            plane = "plane";
+            plane = "plane1";
             testAirport.Land(plane);
         }
 
@@ -29,5 +30,29 @@ namespace AirportTests
             testAirport.TakeOff(plane);
             Assert.IsEmpty(testAirport.hangar);
         }
+
+        [Test]
+        public void PlaneCannotStoreInFullHangar()
+        {
+            string nthPlane;
+            string expectedLastPlane = "plane10";
+            string expectedRejectedPlane = "plane11";
+
+            for (int i = 0; i < 10; i++)
+            {
+                nthPlane = "plane" + (i + 2);
+                testAirport.Land(nthPlane);
+            }
+            Assert.IsTrue(testAirport.hangar.Contains(expectedLastPlane));
+            Assert.IsFalse(testAirport.hangar.Contains(expectedRejectedPlane));
+            Assert.AreEqual(testAirport.hangar.Count, 10);
+        }
+
+        [Test]
+        public void CannotTakeOffIfNoPlanes()
+        {
+            testAirport.TakeOff("plane1");
+
+        }
     }
-}
+};
