@@ -6,7 +6,7 @@ namespace AirportClass
     {
         static void Main()
         {
-
+            //something should go here?
         }
 
         public ArrayList hangar = new ArrayList();
@@ -15,6 +15,11 @@ namespace AirportClass
         {
             hangar.Add(plane);
             return hangar;
+        }
+
+        public void TakeOff(string plane)
+        {
+            hangar.Remove(plane);
         }
     }
 }
